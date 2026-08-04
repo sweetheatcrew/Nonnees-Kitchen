@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Viewport Layout -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Search Engine Description -->
+    <meta name="Nonnee's Kitchen" content="A webpage full of Nonnee's Kitchen recipes and cooking tips.">
+
+    <!-- Link Remixicon, CSS, and JS -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+        rel="stylesheet"/>
+     <link rel="Stylesheet" href="\assets\nonneeskitchen.css">
+
+    <!-- Page Title (Appears in browser tab) -->
+    <title>Nonnee's Kitchen</title>
+</head>
+<body>
+        <header id="header" class="topborder">
+        <nav class="nav-container">
+        <h1 id="website-title">Nonnee's Kitchen</h1>
+
+        <div class="nav-toggle" id="nav-toggle">
+            <i id="menu-open-icon" class="ri-menu-line"></i>
+            <i id="menu-close-icon" class="ri-close-line"></i>
+        </div>
+        
+        <div class="nav-menu dropdown-menu" id="nav-menu">
+            <ul class="nav-list dropdown-list">
+                <li><a href="\pages\home.html" class="nav-link dropdown-link">Home</a></li>
+                <li id="recipesDDParent" class="dropdown-parent"><span class="dropdown-title">Recipes </span><i class="sub-dropdown-arrow ri-arrow-up-wide-line"></i>
+                    <div id="recipesDDList" class="sub-nav-menu sub-dropdown-menu">   
+                        <ul class="sub-dropdown-list">
+                            <li><a href="\pages\recipes.html" class="sub-nav-link sub-dropdown-link">All Recipes</a></li>
+                            <li><a href="\pages\breakfast.html" class="sub-nav-link sub-dropdown-link">Breakfast</a></li>
+                            <li><a href="\pages\lunch.html" class="sub-nav-link sub-dropdown-link">Lunch</a></li>
+                            <li><a href="\pages\dinner.html" class="sub-nav-link sub-dropdown-link">Dinner</a></li>
+                            <li><a href="\pages\dessert.html" class="sub-nav-link sub-dropdown-link">Dessert</a></li>
+                            <li><a href="\pages\drinks.html" class="sub-nav-link sub-dropdown-link">Drinks</a></li>
+                            <li><a href="\pages\snacks.html" class="sub-nav-link sub-dropdown-link">Snacks</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="\pages\cookingtips.html" class="nav-link dropdown-link">Cooking Tips</a></li>
+                <li><a href="\pages\videos.html" class="nav-link dropdown-link">Videos</a></li>
+                <li><a href="\pages\questions.html" class="nav-link dropdown-link">Questions</a></li>
+            </ul>
+        </div>
+            
+        </nav>
+    </header>
+
+
+    <main>
+            <div id="recipes">
+            <h2 class="page-title">Breakfast Recipes</h2>
+            
+            <div id="searchbar" class="searchbar">
+                <label for="search">Search <i class="ri-search-line"></i></label>
+                <input type="text" id="search" name="search">
+            </div>
+
+            <p class="details" id="no-results" style="display: none;">No results found.</p>
+
+            <!-- Recipe #1 -->
+            <div id="recipe1" class="recipe">
+                <h3 class="recipe-name">Sweet Pancakes</h3>
+                <p class="recipe-intro">Here is a recipe for sweet pancakes.</p>
+                <h4 class="subtitles">Ingredients</h4>
+                <div class="grid recipe-grid">
+                    <div class="box1">
+                    <h5 class="sub-subtitles">Pantry/Dry Food</h5>
+                    <ul class="recipedetails">
+                        <li>Pancake Mix</li>
+                    </ul>
+                    </div>
+                    <div class="box2">
+                    <h5 class="sub-subtitles">Wet Ingredients</h5>
+                    <ul class="recipedetails">
+                        <li>Almond Milk</li>
+                    </ul>
+                    </div>
+                    <div class="box3">
+                    <h5 class="sub-subtitles">Seasonings</h5>
+                    <ul class="recipedetails">
+                        <li>Cinnamon Powder</li>
+                        <li>Vanilla Extract</li>
+                        <li>Banana Extract</li>
+                    </ul>
+                    </div>
+                    <div class="box4">
+                    <h5 class="sub-subtitles">Other</h5>
+                    <ul class="recipedetails">
+                        <li>Vegetable Oil</li>
+                        <li>Butter</li>
+                        <li>Optional Toppings: Syrup, Fruit, Whipped Cream, etc.</li>
+                    </ul>
+                    </div>
+                </div>
+                <h4 class="subtitles">Equipment</h4>
+                <div class="grid equipment-grid">
+                    <div class="box1">
+                        <h5 class="sub-subtitles">Appliances</h5>
+                        <ul class="recipedetails">
+                            <li>Stove or Griddle</li>
+                        </ul>
+                    </div>
+                    <div class="box2">
+                        <h5 class="sub-subtitles">Standard Tools</h5>
+                        <ul class="recipedetails">
+                            <li>Stirring Spoon</li>
+                            <li>Mixing Bowl</li>
+                            <li>Frying Pan</li>
+                            <li>Spatula</li>
+                        </ul>
+                    </div>
+                </div>
+                <h4 class="subtitles">Instructions</h4>
+                <ol class="instructions">
+                    <li>Mix pancake mix and almond milk to a thick, yet runny consistency.</li>
+                    <li>Add splashes of vanilla and banana extract.</li>
+                    <li>Sprinkle in cinnamon powder.</li>
+                    <li>Set your pan to medium-low heat with a teaspoon of vegetable oil.</li>
+                    <li>Add pancake mix to pan when the oil is warm. Create pancakes of your desired size.</li>
+                    <li>Flip pancake with spatula when many bubbles surface, or when the cooking side turns golden brown.</li>
+                    <li>Remove pancake when the other side becomes golden brown.</li>
+                    <li>Smooth butter on top of pancake.</li>
+                    <li>Repeat steps 4-8 for remaining batter.</li>
+                    <li>Serve with your toppings of choice, congratulate yourself, and be fulfilled!</li>
+                </ol>
+                <div class="backtotop"><span><a href="#header" class="nav-link">Back to top</a></span></div>
+            </div>
+
+            <!-- Recipe #2 -->
+            <div id="recipe2" class="recipe">
+                <h3 class="recipe-name">Cheesy Creole Shrimp & Grits</h3>
+                <p class="recipe-intro">Here is a recipe for Cheesy Creole Shrimp & Grits.</p>
+                <h4 class="subtitles">Ingredients</h4>
+                <div class="grid recipe-grid">
+                    <div class="box1">
+                        <h5 class="sub-subtitles">Pantry/Dry Food</h5>
+                        <ul class="recipedetails">
+                            <li>Grits</li>
+                        </ul>
+                    </div>
+                    <div class="box2">
+                        <h5 class="sub-subtitles">Wet Ingredients</h5>
+                        <ul class="recipedetails">
+                            <li>Heavy Cream</li>
+                            <li>Chicken Broth</li>
+                            <li>Cheese</li>
+                            <li>Butter</li>
+                        </ul>
+                    </div>
+                    <div class="box3">
+                        <h5 class="sub-subtitles">Meat</h5>
+                        <ul class="recipedetails">
+                            <li>Bacon</li>
+                            <li>Shrimp</li>
+                        </ul>
+                    </div>
+                    <div class="box4">
+                        <h5 class="sub-subtitles">Produce/Vegetables</h5>
+                        <ul class="recipedetails">
+                            <li>Celery</li>
+                            <li>Green Bell Pepper</li>
+                            <li>Yellow Onion</li>
+                            <li>Garlic</li>
+                            <li>For garnish: Green Onions</li>
+                        </ul>
+                    </div>
+                    <div class="box5">
+                        <h5 class="sub-subtitles">Seasonings</h5>
+                        <ul class="recipedetails">
+                            <li>Onion Powder</li>
+                            <li>Garlic Powder</li>
+                            <li>Creole Seasoning</li>
+                            <li>Parsley Flakes</li>
+                            <li>Salt</li>
+                            <li>Black Pepper</li>
+                        </ul>
+                    </div>
+                    <div class="box6">
+                        <h5 class="sub-subtitles">Other</h5>
+                        <ul class="recipedetails">
+                            <li>Optional Chicken Broth Replacement: Water & Chicken Bouillon</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4 class="subtitles">Equipment</h4>
+                <div class="grid equipment-grid">
+                    <div class="box1">
+                        <h5 class="sub-subtitles">Appliances</h5>
+                        <ul class="recipedetails">
+                            <li>Stove</li>
+                        </ul>
+                    </div>
+                    <div class="box2">
+                        <h5 class="sub-subtitles">Standard Tools</h5>
+                        <ul class="recipedetails">
+                            <li>Stirring Spoon</li>
+                            <li>Knife or Slicing Tool</li>
+                            <li>Pot</li>
+                            <li>Sauce Pan</li>
+                            <li>Frying Pan</li>
+                            <li>Spatula</li>
+                            <li>Optional, but recommended: tongs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4 class="subtitles">Instructions</h4>
+                <h5 class="sub-subtitles">Grits</h5>
+                <ol class="instructions">
+                    <li>Follow instructions on grits package for the correct grits to liquid ratio. Add grits and chicken broth to pot on medium heat.</li>
+                    <li>Add a splash of heavy cream, a pinch of salt, black pepper, and a little bit of butter.</li>
+                    <li>Let your grits cook. Stir occasionally to prevent sticking and burning.</li>
+                    <li>Remove grits from heat when grits have thickened and absorbed the chicken broth.</li>
+                </ol>
+                <h5 class="sub-subtitles">Cheese Sauce</h5>
+                <ol class="instructions">
+                    <li>Chop celery, bell pepper, onion, and garlic.</li>
+                    <li>Heat a saucepan to medium-high heat with butter and oil.</li>
+                    <li>Fry chopped vegetables (except garlic) in a light amount of oil and butter until vegetables start to soften. Then add garlic. Continue frying until vegetables are soft (especially the celery).</li>
+                    <li>Turn temperature down to medium-low heat.</li>
+                    <li>Add heavy cream to saucepan for the base of your sauce.</li>
+                    <li>Season mixture with all seasonings except salt and parsley.</li>
+                    <li>Add a couple handfuls of cheese. Mix and allow cheese to melt and thicken into cream.</li>
+                    <li>Taste and adjust seasonings, if needed.</li>
+                    <li>Remove from heat when sauce reaches desired consistency.</li>
+                </ol>
+                <h5 class="sub-subtitles">Shrimp & Bacon</h5>
+                <ol class="instructions">
+                    <li>Lightly season shrimp with creole seasoning, onion powder, pepper, and parsley flakes.</li>
+                    <li>Heat frying pan to medium heat with light amounts of oil and butter.</li>
+                    <li>Fry shrimp on each side for about 3-4 minutes each.</li>
+                    <li>Remove and set aside when finished.</li>
+                    <li>Chop bacon into small bits.</li>
+                    <li>Fry bacon bits. Remove when finished.</li>
+                </ol>
+                <h5 class="sub-subtitles">Toppings</h5>
+                <ol class="instructions">
+                    <li>In a bowl, layer grits, cheese sauce, shrimp, and bacon bits.</li>
+                    <li>Garnish with green onions and parsley flakes, if desired.</li>
+                    <li>Congratulate yourself and be fulfilled.</li>
+                </ol>
+                <div class="backtotop"><span><a href="#header" class="nav-link">Back to top</a></span></div>
+            </div>  
+        </div>
+    </main>
+
+    <footer>
+        &copy; <span id="year"></span> Nonnee's Kitchen. Powered by Sweet Heat Crew.
+    </footer>
+    
+    <script src="\scripts\nonneeskitchen.js"></script>
+</body>
+</html>
