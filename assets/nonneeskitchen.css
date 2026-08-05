@@ -63,6 +63,13 @@ html, body {
     position: relative;
     width: 12%;
     height: 45%;
+    z-index: 9999;
+    cursor: pointer;
+    pointer-events: auto
+}
+
+nav-toggle i {
+    pointer-events: none;
 }
 
 .nav-toggle:hover {
