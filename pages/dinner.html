@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Viewport Layout -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Search Engine Description -->
+    <meta name="Nonnee's Kitchen" content="A webpage full of Nonnee's Kitchen recipes and cooking tips.">
+
+    <!-- Link Remixicon, CSS, and JS -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+        rel="stylesheet"/>
+     <link rel="Stylesheet" href="../assets/nonneeskitchen.css">
+
+    <!-- Page Title (Appears in browser tab) -->
+    <title>Nonnee's Kitchen</title>
+</head>
+<body>
+        <header id="header" class="topborder">
+        <nav class="nav-container">
+        <h1 id="website-title">Nonnee's Kitchen</h1>
+
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation menu">
+            <i id="menu-open-icon" class="ri-menu-line"></i>
+            <i id="menu-close-icon" class="ri-close-line"></i>
+        </button>
+        
+        <div class="nav-menu dropdown-menu" id="nav-menu">
+            <ul class="nav-list dropdown-list">
+                <li><a href="../" class="nav-link dropdown-link">Home</a></li>
+                <li id="recipesDDParent" class="dropdown-parent"><span class="dropdown-title">Recipes </span><i class="sub-dropdown-arrow ri-arrow-up-wide-line"></i>
+                    <div id="recipesDDList" class="sub-nav-menu sub-dropdown-menu">   
+                        <ul class="sub-dropdown-list">
+                            <li><a href="allrecipes" class="sub-nav-link sub-dropdown-link">All Recipes</a></li>
+                            <li><a href="breakfast" class="sub-nav-link sub-dropdown-link">Breakfast</a></li>
+                            <li><a href="lunch" class="sub-nav-link sub-dropdown-link">Lunch</a></li>
+                            <li><a href="dinner" class="sub-nav-link sub-dropdown-link">Dinner</a></li>
+                            <li><a href="dessert" class="sub-nav-link sub-dropdown-link">Dessert</a></li>
+                            <li><a href="drinks" class="sub-nav-link sub-dropdown-link">Drinks</a></li>
+                            <li><a href="snacks" class="sub-nav-link sub-dropdown-link">Snacks</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="cookingtips" class="nav-link dropdown-link">Cooking Tips</a></li>
+                <li><a href="videos" class="nav-link dropdown-link">Videos</a></li>
+                <li><a href="questions" class="nav-link dropdown-link">Questions</a></li>
+            </ul>
+        </div>
+            
+        </nav>
+    </header>
+
+    <main>
+        <div id="recipes">
+            <!-- Recipe #1 -->
+            <h2 class="page-title">Dinner Recipes</h2>
+
+            <div class="searchbar">
+                <label for="search">Search <i class="ri-search-line"></i></label>
+                <input type="text" id="search" name="search">
+            </div>
+
+    <p class="details" id="no-results" style="display: none;">No results found.</p>
+
+            <div id="recipe1" class="recipe">
+                <h3 class="recipe-name">American Southern Red Beans & Rice</h3>
+                <p class="recipe-intro">Here is a recipe for classic American Southern Red Beans & Rice.</p>
+                <h4 class="subtitles">Ingredients</h4>
+                <div class="grid recipe-grid">
+                    <div class="box1">
+                        <h5 class="sub-subtitles">Pantry/Dry Food</h5>
+                        <ul class="recipedetails">
+                            <li>Cooked White Rice</li>
+                            <li>Red Kidney Beans</li>
+                            <li>Chicken Broth</li>
+                        </ul>
+                    </div>
+                    <div class="box2">
+                        <h5 class="sub-subtitles">Meat</h5>
+                        <ul class="recipedetails">
+                            <li>Turkey Part (Of your choice: neck, thighs, wings)</li>
+                            <li>Andouille Sausage</li>
+                        </ul>
+                    </div>
+                    <div class="box3">
+                        <h5 class="sub-subtitles">Produce/Vegetables</h5>
+                        <ul class="recipedetails">
+                            <li>Celery</li>
+                            <li>Green Bell Pepper</li>
+                            <li>Yellow Onion</li>
+                            <li>Garlic</li>
+                            <li>For garnish: Green Onions</li>
+                        </ul>
+                    </div>
+                    <div class="box4">
+                        <h5 class="sub-subtitles">Seasonings</h5>
+                        <ul class="recipedetails">
+                            <li>Onion Powder</li>
+                            <li>Garlic Powder</li>
+                            <li>Creole Seasoning</li>
+                            <li>Fresh or Dried Herbs of Choice, or Italian Seasoning</li>
+                            <li>Cayenne Pepper</li>
+                            <li>Sage</li>
+                            <li>Bay Leaves</li>
+                            <li>Salt</li>
+                            <li>Black Pepper</li>
+                        </ul>
+                    </div>
+                    <div class="box5">
+                        <h5 class="sub-subtitles">Other</h5>
+                        <ul class="recipedetails">
+                            <li>Optional Chicken Broth Replacement: Water & Chicken Bouillon</li>
+                            <li>Optional: Cornstarch (As Thickening Agent)</li>
+                        </ul>
+            </div>
+            <div class="box6"></div>
+        </div>
+                <h4 class="subtitles">Equipment</h4>
+                <div class="grid equipment-grid">
+                    <div class="box1">
+                        <h5 class="sub-subtitles">Appliances</h5>
+                        <ul class="recipedetails">
+                            <li>Stove or Crockpot</li>
+                        </ul>
+                    </div>
+                    <div class="box2">
+                        <h5 class="sub-subtitles">Standard Tools</h5>
+                        <ul class="recipedetails">
+                            <li>Stirring Spoon</li>
+                            <li>Big Pot with Lid</li>
+                            <li>Knife or Slicing Tool</li>
+                            <li>Bowl</li>
+                            <li>Optional, but recommended: tongs</li>
+                            <li>For serving: Ladle</li>
+                        </ul>
+                    </div>
+                    <div class="box3">
+                        <h5 class="sub-subtitles">Machine Tools</h5>
+                        <ul class="recipedetails">
+                            <li>Blender or Immersion Blender</li>
+                        </ul>
+                    </div>
+                </div>
+                <h4 class="subtitles">Instructions</h4>
+                <ol class="instructions">
+                    <li>Soak Red Kidney Beans in water overnight or for at least 4 hours. Drain after.</li>
+                    <li>Lightly season turkey part. Seal it and marinate in fridge.</li>
+                    <li>Chop all vegetables and slice andouille sausage. Keep garlic separate. Keep green onions on side for garnish.</li>
+                    <li>Set your pot to medium-high heat. Fry your sausage in a light amount of oil and butter. You want to brown your sausage. Remove when finished and set aside.</li>
+                    <li>Turn the heat down to medium. Remove excess oil with a paper towel and tool of choice.</li>
+                    <li>Fry chopped vegetables (except garlic) in a light amount of oil and butter until vegetables start to soften. Then add garlic. Continue frying until vegetables are soft. (Optional: add a medium-sized coat of cornstarch at the end. Incorporate with vegetables.)</li>
+                    <li>Add red kidney beans and turkey parts to pot, then add chicken broth.</li>
+                    <li>Season broth.</li>
+                    <li>Turn up the heat until the mixture begins to boil, then turn down the temperature to a low heat. Let cook for 3 hours or until beans are tender.</li>
+                    <li>Use tongs or spoon to remove turkey parts. Shred turkey parts and discard bones and excess fat. Add meat back to the pot.</li>
+                    <li>Gather spoonfuls of beans and set aside in a bowl.</li>
+                    <li>Add andouille sausage to pot.</li>
+                    <li>Blend set-aside beans until creamy. Add blend back to the pot.</li>
+                    <li>Let cook for 5 more minutes, then remove from heat.</li>
+                    <li>Serve on top of white rice, garnish with green onions.</li>
+                    <li>Congratulate yourself and be fulfilled.</li>
+                </ol>
+                <div class="backtotop"><span><a href="#header" class="nav-link">Back to top</a></span></div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+       <p>&copy; <span id="year"></span> Nonnee's Kitchen. Powered by Sweet Heat Crew.</p>
+    </footer>
+    
+    <script src="../scripts/nonneeskitchen.js"></script>
+</html>
