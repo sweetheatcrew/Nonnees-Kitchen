@@ -65,10 +65,10 @@ html, body {
     height: 45%;
     z-index: 9999;
     cursor: pointer;
-    pointer-events: auto
+    pointer-events: auto;
 }
 
-nav-toggle i {
+.nav-toggle i {
     pointer-events: none;
 }
 
@@ -84,22 +84,25 @@ nav-toggle i {
     margin: auto;
     font-size: 1.5rem;
     cursor: pointer;
-    transition: opacity 1s transform .4s;
+    transition: opacity .4s ease, transform .4s ease;
 }
 
 
 #menu-close-icon {
     opacity: 0;
+    pointer-events: none;
 }
 
 /* Switch Dropdown Menu Icon */
 
 .show-icon #menu-close-icon{
     opacity: 1;
+    pointer-events: auto;
 }
 
 .show-icon #menu-open-icon{
     opacity: 0;
+    pointer-events: none;
 }
 
 /* Menu Properties */
@@ -129,6 +132,7 @@ nav-toggle i {
 
 .dropdown-menu {
     position: absolute;
+    top: -40rem;
     right: 0;
     width: 100%;
     background-color: var(--quarternary-color);
@@ -136,14 +140,14 @@ nav-toggle i {
     overflow: auto;
     pointer-events: none;
     opacity: 0;
-    transition: top .3s opacity .1s;
+    transition: top .3s ease, opacity .1s ease;
 }
 
 .show-menu {
-    opacity: 1;
-    top: 5rem;
-    pointer-events: fill;
-    z-index: 999;
+    opacity: 1 !important;
+    top: 5rem !important;
+    pointer-events: auto !important;
+    z-index: 999 !important;
 }
 
 .dropdown-menu ul {
