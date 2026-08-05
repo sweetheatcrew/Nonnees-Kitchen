@@ -23,11 +23,14 @@ searchQuery.addEventListener('keyup', e => {
     let matches = 0;
 
     recipes.forEach(recipe => {
+        // Target the outer wrapper card of the recipe
+        const recipeCard = recipe.parentNode;
+
         if (recipe.textContent.toLowerCase().includes(currentValue)) {
-            recipe.parentNode.style.display = "block";
+            recipeCard.style.display = "";
             matches++;
         } else {
-            recipe.parentNode.style.display = "none";
+            recipeCard.style.display = "none";
         }
     });
 

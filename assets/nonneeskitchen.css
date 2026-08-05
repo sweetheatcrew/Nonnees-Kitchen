@@ -60,6 +60,9 @@ html, body {
 /* Navigation Button (Hamburger Menu Icon) */
 .nav-toggle {
     color: var(--secondary-color);
+    background-color: transparent;
+    border: none;
+    
     position: relative;
     width: 12%;
     height: 45%;
